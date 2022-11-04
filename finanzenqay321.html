@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finanzübersicht</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type ="text/css" href = "./finanz.css"/>
+</head>
+<body>
+
+<h2>Ausgaben</h2>
+
+<form action="finanz.php" method="post">
+
+    <p><label for="gesch">Datum: </label><input type="date" name="datum" required placeholder="Datum" /> </p>
+
+
+        <label for="gesch">Geschäft: </label>
+        <select name="gesch" id="gesch">
+            <option value="Lidl">Lidl</option>
+            <option value="Edeka">Edeka</option>
+            <option value="DM">DM</option>
+            <option value="Mueller">Müller</option>
+            <option value="Tank">Tankstelle</option>
+            <option value="Getr">Getränke</option>
+            <option value="Freizeit">Freizeit</option>
+            <option value="Kinder">Kinder</option>
+        </select>
+
+
+
+
+    <p><label for="gesch">Beschreibung: </label><input type="text" name="besch" required placeholder="Beschreibung" /> </p>
+
+
+    <p><label for="gesch">Betrag: </label><input type="text" name="betrag" required placeholder="Betrag" /> </p>
+
+
+
+
+    <p><input type="submit" value="senden" />
+        <input type="reset" value="löschen" /></p>
+</form>
+
+    <form action="uebersicht.php" method="POST">
+
+        <h3>Ausgaben/Monat</h3>
+
+        <p>Bitte geb ein Datum ein:</p>
+
+        <p><input type="date" name="datum" /> Datum</p>
+        <p><input type="submit" value="senden" />
+
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
